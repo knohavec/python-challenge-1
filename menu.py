@@ -236,11 +236,11 @@ for item in order_list:
 
     # 9. Create space strings
     item_spaces = " " * num_item_spaces
-    price_spaces = " " * num_price_spaces
+    price_spaces = " " * (num_price_spaces - 1)
     quantity_spaces = " " * num_quantity_spaces
 
     # 10. Print the item name, price, and quantity
-    print(f"{item_name}{item_spaces}| ${price}{price_spaces}| {quantity}{quantity_spaces}")
+    print(f"{item_name}{item_spaces} |${price}{price_spaces}| {quantity}{quantity_spaces}")
 
 
 
