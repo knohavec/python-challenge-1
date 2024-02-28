@@ -72,6 +72,9 @@ def submit_order():
             "Quantity": int(quantity)
         })
         update_order_list()
+        menu_selection_var.set("")
+        menu_category_var.set("")
+        quantity_var.set("")
     else:
         status_label.config(text="Please select a menu category, item, and quantity.")
 
